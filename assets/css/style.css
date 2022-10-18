@@ -1,0 +1,48 @@
+:root {
+	--text-color: #fff;
+	--bg-primary-color: #000;
+	--bg-secondary-color: #3bb7c7;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: var(--bg-primary-color);
+	color: var(--text-color);
+	scroll-behavior: smooth;
+}
+
+.brand-font {
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+}
+.scrolled {
+	background-color: var(--bg-secondary-color);
+	transition: all 0.5s ease;
+}
+.second-color-bg {
+	background-color: var(--bg-secondary-color);
+}
+.hr-custom {
+	color: var(--bg-secondary-color);
+	border: none;
+	padding: 1.5px;
+}
+/* AJUSTE LA IMAGEN QUE TENIA UN TAMAÑO DISTINTO */
+.card img {
+	/* object-fit: cover; */
+	height: 100%;
+}
+#menu .navbar-nav li:hover {
+	opacity: 0.5;
+}
+/* EN EL FOOTER NO ENCONTRE EL MOTIVO, PERO HABIA UN PADDING DE 32 A LA IZQ Y DESALINEABA TODO */
+footer ul {
+	padding: 0px;
+}
+
+@media screen and (max-width: 768px) {
+	#menu {
+		background-color: var(--bg-secondary-color);
+		position: static;
+	}
+}
